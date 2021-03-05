@@ -43,7 +43,7 @@ public class TestDivision {
         short divisor = 1;
         short expectedShort = 2;
         // : When
-        short actualShort = mathUtils.divide(dividend, divisor);
+        short actualShort = (short) mathUtils.divide(dividend, divisor);
         // : Then
         assertEquals(expectedShort, actualShort);
 
@@ -56,7 +56,7 @@ public class TestDivision {
         byte divisor = 32;
         byte expectedByte = 2;
         // : When
-        byte actualByte = mathUtils.divide(dividend, divisor);
+        byte actualByte = (byte) mathUtils.divide(dividend, divisor);
         // : Then
         assertEquals(expectedByte, actualByte);
     }
